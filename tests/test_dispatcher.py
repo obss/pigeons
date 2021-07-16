@@ -60,7 +60,7 @@ def test_init_logger_with_malformed_url():
 
 
 def test_init_logger_non_exist_url():
-    endpoint = "https://qweasdqwe.com/api/v2"
+    endpoint = "https://this-is-non-existing-url-1234567890-0987654321.com/api/v2"
 
     with pytest.raises(SSLError):
         init_logger(endpoint=endpoint, log_to_teams=True, tf_capture_flags=[DEFAULT_FLAG], tf_regex=False)
