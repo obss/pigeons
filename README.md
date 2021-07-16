@@ -23,7 +23,7 @@ Pigeons is easy to use with just two line of codes.
     
     import sys
 
-    from pigeon import init_logger, pigeon_excepthook
+    from pigeons import init_logger, pigeon_excepthook
 
     sys.excepthook = pigeon_excepthook
     logger = init_logger(
@@ -38,7 +38,7 @@ it will be sent to specified endpoint.
 
     import logging
 
-    from pigeon import init_logger
+    from pigeons import init_logger
 
     endpoint = "https://custom_domain.com/api/..."
     my_flag = "!my_flag "
@@ -56,7 +56,7 @@ If the log message matches the regex, then it will be sent to specified endpoint
 
     import logging
 
-    from pigeon import init_logger
+    from pigeons import init_logger
 
     endpoint = "https://custom_domain.com/api/..."
     my_regex = "^[a-zA-Z0-9]+$"
@@ -74,7 +74,7 @@ Pigeons has a custom excepthook for handling uncaught exceptions.
 To handle uncaught exceptions just override `sys.excepthook` as follows
 
     importy sys
-    from pigeon import pigeon_excepthook
+    from pigeons import pigeon_excepthook
 
     sys.excepthook = pigeon_excepthook
 
