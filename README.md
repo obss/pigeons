@@ -93,6 +93,28 @@ To handle uncaught exceptions just override `sys.excepthook` as follows
     logger.critical("Another captured message.")
     logger.fatal("And another one.")
 
+## Contributing
+
+PRs are always welcomed.
+
+### Installation
+
+    git clone https://github.com/obss/pigeons.git
+    cd pigeons
+    python setup.py develop
+    pip install -r requirements-dev.txt
+
+### Tests
+
+To tests simply run.
+
+    pytest tests/
+
+Pigeons uses black to assure code style standard.
+
+    black . --config pyproject.toml
+
+
 ## License
 
 Licensed under the [MIT](LICENSE) License.
