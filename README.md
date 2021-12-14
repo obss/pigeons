@@ -30,6 +30,9 @@ Pigeons is easy to use with just two line of codes.
         ...
     )
 
+### First things, first
+
+First of all you need to create an endpoint to your MS Teams channel, to obtain your endpoint refer to the Teams' [Incoming Webhook documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook). 
 
 ### With Start Flags
 Pigeons will look for specified flags in the beginning of the log for 
