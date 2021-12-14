@@ -19,6 +19,7 @@ regex to capture records of any logger.
     python setup.py install
 
 ## Usage
+
 Pigeons is easy to use with just two line of codes.
     
     import sys
@@ -32,9 +33,10 @@ Pigeons is easy to use with just two line of codes.
 
 ### First things, first
 
-First of all you need to create an endpoint to your MS Teams channel, to obtain your endpoint refer to the Teams' [Incoming Webhook documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook). 
+First of all you need to create an `endpoint` to your MS Teams channel, to obtain your endpoint refer to the Teams' [Incoming Webhook documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook).
 
 ### With Start Flags
+
 Pigeons will look for specified flags in the beginning of the log for 
 the specified log level. If the log message starts with the flag, then
 it will be sent to specified endpoint.
@@ -54,6 +56,7 @@ it will be sent to specified endpoint.
     )
 
 ### With Regex
+
 Pigeons will look for specified regex in the log for the specified log level. 
 If the log message matches the regex, then it will be sent to specified endpoint.
 
